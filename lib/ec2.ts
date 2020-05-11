@@ -44,6 +44,5 @@ export class Ec2Stack extends cdk.Stack {
       threshold: 0,
       evaluationPeriods: 1,
     });
-
   }
 }

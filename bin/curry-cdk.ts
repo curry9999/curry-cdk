@@ -6,5 +6,5 @@ import { Ec2Stack } from '../lib/ec2';
 /* app */
 const app = new cdk.App();
 
-/* Stacks */
+/* Stack */
 new Ec2Stack(app, 'Ec2Stack');
