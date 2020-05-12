@@ -34,14 +34,14 @@ export class Ec2Stack extends cdk.Stack {
       keyName: 'test',
     });
 
-    // CloudWatch Alarm
-    new Alarm(this, 'MyAlarm', {
+    // CloudWatch Alarm　CPUUtilization
+    new Alarm(this, 'AlarmCPUUtilization', {
       metric: new Metric({
         namespace: 'AWS/EC2',
         metricName: 'CPUUtilization',
         dimensions: {"InstanceId": ec2.instanceId},
       }),
-      threshold: 0,
+      threshold: 80,
       evaluationPeriods: 1,
     });
   }
