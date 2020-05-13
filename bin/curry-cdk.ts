@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import 'source-map-support/register';
 import cdk = require('@aws-cdk/core');
 import { Ec2Stack } from '../lib/ec2';
 
@@ -7,4 +6,5 @@ import { Ec2Stack } from '../lib/ec2';
 const app = new cdk.App();
 
 /* Stack */
-new Ec2Stack(app, 'Ec2Stack');
+const ec2stack = new Ec2Stack(app, 'Ec2Stack');
+ec2stack.tags.setTag('autostop','1');
