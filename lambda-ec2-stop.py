@@ -6,7 +6,8 @@ def main(event, context):
 
     results = ec2.describe_instances(
         Filters=[
-            {'Name': 'tag:autostop', 'Values': ['1']}
+            {'Name': 'tag:autostop', 'Values': ['1']},
+            {'Name': 'instance-state-name', 'Values': ['running']}
         ]
     )
 
