@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import cdk = require('@aws-cdk/core');
 import { EC2Stack , VPCStack } from '../lib/ec2';
-import { LabmdaStack } from '../lib/lambda';
+import { LambdaStack } from '../lib/lambda';
 
 /* app */
 const app = new cdk.App();
@@ -16,4 +16,4 @@ const ec2stack = new EC2Stack(app, 'EC2Stack', {
 ec2stack.tags.setTag('autostop','1');
 
 /* Stack Labmda */
-const lambdastack = new LabmdaStack(app, 'LabmdaStack');
+const lambdastack = new LambdaStack(app, 'LambdaStack');
