@@ -1,7 +1,8 @@
+import os
 import boto3
 
 def main(event, context):
-    region = 'ap-northeast-1'
+    region = os.getenv("AWS_DEFAULT_REGION")
     ec2 = boto3.client('ec2', region_name=region)
 
     results = ec2.describe_instances(
