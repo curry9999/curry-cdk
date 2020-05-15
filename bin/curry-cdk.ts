@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import cdk = require('@aws-cdk/core');
-import { EC2Stack , VPCStack } from '../lib/ec2';
+import { EC2Stack } from '../lib/ec2';
+import { VPCStack } from '../lib/vpc';
 import { LambdaStack } from '../lib/lambda';
 
 /* app */

@@ -1,31 +1,6 @@
 import cdk = require('@aws-cdk/core');
-import { AmazonLinuxImage, SubnetType, Instance, InstanceType, InstanceClass, InstanceSize, Vpc, IVpc } from '@aws-cdk/aws-ec2';
+import { AmazonLinuxImage, Instance, InstanceType, InstanceClass, InstanceSize, IVpc } from '@aws-cdk/aws-ec2';
 import { Alarm, Metric } from '@aws-cdk/aws-cloudwatch';
-
-// VPC Stack
-export class VPCStack extends cdk.Stack {
-  public readonly vpc: Vpc;
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
-    super(scope, id, props);
-
-    // VPC
-    this.vpc = new Vpc(this, 'Vpc', {
-      cidr: "172.16.0.0/16",
-      subnetConfiguration: [
-        {
-          cidrMask: 24,
-          name: 'public',
-          subnetType: SubnetType.PUBLIC,
-        },
-        {
-          cidrMask: 24,
-          name: 'private',
-          subnetType: SubnetType.PRIVATE,
-        },
-     ],
-    });
-  }
-}
 
 // EC2 Stack
 interface StackProps extends cdk.StackProps {
