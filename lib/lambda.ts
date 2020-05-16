@@ -10,6 +10,9 @@ export class LambdaStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
+    /*
+      Common
+    */
     // IAM Role Lambda Execute
     const lambdarole = new Role(this, 'IamRoleLambda', {
       roleName: 'IamRoleLambda',
@@ -20,8 +23,29 @@ export class LambdaStack extends cdk.Stack {
       ],
     });
 
+    /*
+      EC2 Auto Start
+    */
     // Register Lambda Function
-    const lambdaFn = new lambda.Function(this, 'Singleton', {
+    const lambdaStart = new lambda.Function(this, 'LambdaFunctionAutoStart', {
+      code: new lambda.InlineCode(fs.readFileSync('lambda/lambda-ec2-start.py', { encoding: 'utf-8' })),
+      handler: 'index.main',
+      timeout: cdk.Duration.seconds(300),
+      runtime: lambda.Runtime.PYTHON_3_6,
+      role: lambdarole,
+    });
+
+    // CloudWatch Events
+    const ruleStart = new Rule(this, 'EventRuleAutoStart', {
+      schedule: events.Schedule.expression('cron(0/5 * * * ? *)'),
+    });
+    ruleStart.addTarget(new targets.LambdaFunction(lambdaStart));
+
+    /*
+      EC2 Auto Stop
+    */
+    // Register Lambda Function
+    const lambdaStop = new lambda.Function(this, 'LambdaFunctionAutoStop', {
       code: new lambda.InlineCode(fs.readFileSync('lambda/lambda-ec2-stop.py', { encoding: 'utf-8' })),
       handler: 'index.main',
       timeout: cdk.Duration.seconds(300),
@@ -30,9 +54,9 @@ export class LambdaStack extends cdk.Stack {
     });
 
     // CloudWatch Events
-    const rule = new Rule(this, 'EventRuleAutoStart', {
+    const ruleStop = new Rule(this, 'EventRuleAutoStop', {
       schedule: events.Schedule.expression('cron(0/5 * * * ? *)'),
     });
-    rule.addTarget(new targets.LambdaFunction(lambdaFn));
+    ruleStop.addTarget(new targets.LambdaFunction(lambdaStop));
   }
 }
