@@ -10,11 +10,12 @@ const app = new cdk.App();
 /* Stack VPC */
 const vpcstack = new VPCStack(app, 'VPCStack');
 
-/* Stack EC2 */
+/* Stack EC2 Auto Start and Auto Stop */
 const ec2stack = new EC2Stack(app, 'EC2Stack', {
     vpc: vpcstack.vpc
 });
 ec2stack.tags.setTag('autostop','1');
+ec2stack.tags.setTag('autostart','0');
 
 /* Stack Labmda */
 const lambdastack = new LambdaStack(app, 'LambdaStack');
