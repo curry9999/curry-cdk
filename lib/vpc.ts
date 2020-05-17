@@ -7,7 +7,9 @@ export class VPCStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // VPC
+    /*
+      VPC
+    */
     this.vpc = new Vpc(this, 'Vpc', {
       cidr: "172.16.0.0/16",
       subnetConfiguration: [
