@@ -2,7 +2,7 @@ import cdk = require('@aws-cdk/core');
 import events = require('@aws-cdk/aws-events');
 import { Duration } from '@aws-cdk/core';
 import { AmazonLinuxImage, Instance, InstanceType, InstanceClass, InstanceSize, IVpc } from '@aws-cdk/aws-ec2';
-import { BackupPlan, BackupPlanRule, BackupResource } from '@aws-cdk/aws-backup';
+import { BackupPlan, BackupPlanRule, BackupResource, BackupVault } from '@aws-cdk/aws-backup';
 import { Alarm, Metric } from '@aws-cdk/aws-cloudwatch';
 
 // EC2 Stack
@@ -44,7 +44,10 @@ export class EC2Stack extends cdk.Stack {
     /*
       AWS Backup
     */
-    const plan = BackupPlan.dailyWeeklyMonthly5YearRetention(this, 'Plan');
+    const vault = new BackupVault(this, 'Vault', {
+      removalPolicy: cdk.RemovalPolicy.DESTROY
+    });
+    const plan = BackupPlan.dailyWeeklyMonthly5YearRetention(this, 'Plan', vault);
     plan.addSelection('Selection', {
       resources: [
         BackupResource.fromEc2Instance(ec2),
