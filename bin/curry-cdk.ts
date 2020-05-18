@@ -16,7 +16,7 @@ const ec2stack = new EC2Stack(app, 'EC2Stack', {
 });
 ec2stack.tags.setTag('autostop','1');
 ec2stack.tags.setTag('autostart','0');
-ec2stack.tags.setTag('autobackup','0');
+ec2stack.tags.setTag('autobackup','1');
 
 /* Stack Labmda */
 const lambdastack = new LambdaStack(app, 'LambdaStack');
