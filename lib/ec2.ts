@@ -50,7 +50,7 @@ export class EC2Stack extends cdk.Stack {
         BackupResource.fromEc2Instance(ec2),
         BackupResource.fromTag('autobackup','1'),
       ]
-    })  
+    })
     plan.addRule(new BackupPlanRule({
       completionWindow: Duration.hours(2),
       startWindow: Duration.hours(1),
@@ -61,7 +61,5 @@ export class EC2Stack extends cdk.Stack {
       }),
       moveToColdStorageAfter: Duration.days(30)
     })); 
-    plan.addRule(BackupPlanRule.daily());
-    plan.addRule(BackupPlanRule.weekly());
   }
 }
