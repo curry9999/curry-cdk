@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import cdk = require('@aws-cdk/core');
 import { SubnetType, Vpc } from '@aws-cdk/aws-ec2';
 
