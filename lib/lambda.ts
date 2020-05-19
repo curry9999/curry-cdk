@@ -7,6 +7,7 @@ import lambda = require('@aws-cdk/aws-lambda');
 import { Rule } from '@aws-cdk/aws-events';
 import { Role, ServicePrincipal, ManagedPolicy } from '@aws-cdk/aws-iam';
 
+// Lambda Stack
 export class LambdaStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);

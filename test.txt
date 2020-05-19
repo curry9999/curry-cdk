@@ -1,0 +1,1444 @@
+{
+    "Bundles": [
+        {
+            "BundleId": "wsb-b0s22j3d7",
+            "Name": "Performance with Windows 7",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 2 vCPU 7.5GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1477521657.874
+        },
+        {
+            "BundleId": "wsb-2lc8mbdsn",
+            "Name": "Power with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 4 vCPU 16GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1496782230.781
+        },
+        {
+            "BundleId": "wsb-0m60gspvt",
+            "Name": "Performance with Windows 7 and Office 2010(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2010 and PCoIP 2 vCPU 7.5GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1477521694.05
+        },
+        {
+            "BundleId": "wsb-clj85qzj1",
+            "Name": "Standard with Amazon Linux 2",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 2 vCPU 4GiB Memory 50GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1527109631.847
+        },
+        {
+            "BundleId": "wsb-gm4d5tx2v",
+            "Name": "Performance with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 2 vCPU 7.5GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1480379372.6
+        },
+        {
+            "BundleId": "wsb-1pzkp0bx4",
+            "Name": "PowerPro with Windows 7",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 with PCoIP 8 vCPU 32GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538422928.933
+        },
+        {
+            "BundleId": "wsb-2bs6k5lgn",
+            "Name": "Power with Amazon Linux 2",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 4 vCPU 16GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1527109631.708
+        },
+        {
+            "BundleId": "wsb-6cdbk8901",
+            "Name": "Performance with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 2 vCPU 7.5GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1480379372.269
+        },
+        {
+            "BundleId": "wsb-bh8rsxt14",
+            "Name": "Value with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 1 vCPU 2GiB Memory 10GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1480379372.525
+        },
+        {
+            "BundleId": "wsb-92tn3b7gx",
+            "Name": "Value with Windows 7",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 1 vCPU 2GiB Memory 10GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1477521668.586
+        },
+        {
+            "BundleId": "wsb-dk55sygy0",
+            "Name": "Performance with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 2 vCPU 7.5GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1492119160.623
+        },
+        {
+            "BundleId": "wsb-dfyzk6mz7",
+            "Name": "Standard with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 2 vCPU 4GiB Memory 50GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1559161672.156
+        },
+        {
+            "BundleId": "wsb-4jx9plphm",
+            "Name": "Standard with Amazon Linux 2(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 2 vCPU 4GiB Memory 50GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1529603876.211
+        },
+        {
+            "BundleId": "wsb-b0gypb60q",
+            "Name": "Graphics with Windows 7 and Office 2013(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 8 vCPU 15GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1477521688.764
+        },
+        {
+            "BundleId": "wsb-wwx8kkwg5",
+            "Name": "Graphics with Windows 7 and Office 2010",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2010 and PCoIP 8 vCPU 15GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1477521677.372
+        },
+        {
+            "BundleId": "wsb-3vw4c37lm",
+            "Name": "Standard with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 2 vCPU 4GiB Memory 50GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1492119151.975
+        },
+        {
+            "BundleId": "wsb-3t36q0xfc",
+            "Name": "Standard with Windows 7",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 2 vCPU 4GiB Memory 50GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1477521676.962
+        },
+        {
+            "BundleId": "wsb-88p2c5sr7",
+            "Name": "PowerPro with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 8 vCPU 32GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538423216.909
+        },
+        {
+            "BundleId": "wsb-j4dky1gs4",
+            "Name": "Performance with Amazon Linux 2",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 2 vCPU 7.5GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1527109632.164
+        },
+        {
+            "BundleId": "wsb-vfk2nwr1h",
+            "Name": "Standard with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 2 vCPU 4GiB Memory 50GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1559161672.763
+        },
+        {
+            "BundleId": "wsb-6g0zwld0c",
+            "Name": "Value with Windows 7 and Office 2013(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 1 vCPU 2GiB Memory 10GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1477521699.774
+        },
+        {
+            "BundleId": "wsb-9jvhtb24f",
+            "Name": "Standard with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 2 vCPU 4GiB Memory 50GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1480379372.402
+        },
+        {
+            "BundleId": "wsb-bkrfn121f",
+            "Name": "Value with Windows 7 and Office 2010(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2010 and PCoIP 1 vCPU 2GiB Memory 10GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1477521691.41
+        },
+        {
+            "BundleId": "wsb-05t16yhz8",
+            "Name": "Performance with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 2 vCPU 7.5GiB Memory 100GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1559161672.064
+        },
+        {
+            "BundleId": "wsb-44r73z5dr",
+            "Name": "Graphics with Windows 7 and Office 2013",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 8 vCPU 15GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1477521669.001
+        },
+        {
+            "BundleId": "wsb-1b5w6vnz6",
+            "Name": "Performance with Windows 7 and Office 2010",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2010 and PCoIP 2 vCPU 7.5GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1477521665.914
+        },
+        {
+            "BundleId": "wsb-362t3gdrt",
+            "Name": "Standard with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 2 vCPU 4GiB Memory 50GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1559161671.908
+        },
+        {
+            "BundleId": "wsb-vd5hjbswq",
+            "Name": "Power with Windows 7 and Office 2013(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 4 vCPU 16GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1496782230.643
+        },
+        {
+            "BundleId": "wsb-dbmqp0m4s",
+            "Name": "Graphics with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 8 vCPU 15GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1492119161.951
+        },
+        {
+            "BundleId": "wsb-ddkxkghsv",
+            "Name": "PowerPro with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 8 vCPU 32GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538422934.495
+        },
+        {
+            "BundleId": "wsb-kvbh9vtcb",
+            "Name": "Power with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 4 vCPU 16GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1559161672.55
+        },
+        {
+            "BundleId": "wsb-33th3q8q1",
+            "Name": "PowerPro with Windows 7 and Office 2013(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 8 vCPU 32GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538423300.08
+        },
+        {
+            "BundleId": "wsb-v0kfnkkv2",
+            "Name": "Power with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 4 vCPU 16GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1559161673.019
+        },
+        {
+            "BundleId": "wsb-f5g1109b5",
+            "Name": "PowerPro with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 8 vCPU 32GiB Memory 100GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1559161671.761
+        },
+        {
+            "BundleId": "wsb-4qyzfv08r",
+            "Name": "Value with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 1 vCPU 2GiB Memory 10GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1559161672.309
+        },
+        {
+            "BundleId": "wsb-7yzqygv89",
+            "Name": "Performance with Windows 7 and Office 2013(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 2 vCPU 7.5GiB Memory 100GB Storage Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1477521685.298
+        },
+        {
+            "BundleId": "wsb-fd1773pxm",
+            "Name": "Power with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 4 vCPU 16GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1496782231.004
+        },
+        {
+            "BundleId": "wsb-hndykl3r5",
+            "Name": "PowerPro with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 8 vCPU 32GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1559161672.676
+        },
+        {
+            "BundleId": "wsb-8pmj7b7pq",
+            "Name": "Value with Amazon Linux 2",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 1 vCPU 2GiB Memory 10GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1527109632.031
+        },
+        {
+            "BundleId": "wsb-2k4vg5l73",
+            "Name": "Value with Windows 7(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 1 vCPU 2GiB Memory 10GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1477521697.11
+        },
+        {
+            "BundleId": "wsb-fgy4lgypc",
+            "Name": "Value with Windows 7 and Office 2013",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 1 vCPU 2GiB Memory 10GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1477521671.646
+        },
+        {
+            "BundleId": "wsb-g72thwb90",
+            "Name": "Performance with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 2 vCPU 7.5GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1492119155.522
+        },
+        {
+            "BundleId": "wsb-57234qfn3",
+            "Name": "Standard with Windows 7(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 2 vCPU 4GiB Memory 50GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1477521702.454
+        },
+        {
+            "BundleId": "wsb-5sbs0y26m",
+            "Name": "Value with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 1 vCPU 2GiB Memory 10GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1492119153.084
+        },
+        {
+            "BundleId": "wsb-vbsjd64y6",
+            "Name": "Performance with Windows 7 and Office 2013",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 2 vCPU 7.5GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1477521663.254
+        },
+        {
+            "BundleId": "wsb-320p8vd2j",
+            "Name": "Graphics with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 8 vCPU 15GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1492119150.422
+        },
+        {
+            "BundleId": "wsb-g0xb96cdv",
+            "Name": "PowerPro with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 8 vCPU 32GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538422928.982
+        },
+        {
+            "BundleId": "wsb-b27d93m7p",
+            "Name": "Value with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 1 vCPU 2GiB Memory 10GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1492119157.298
+        },
+        {
+            "BundleId": "wsb-53v5ldggd",
+            "Name": "Power with Windows 7(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 4 vCPU 16GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1496782230.728
+        },
+        {
+            "BundleId": "wsb-026hrfqls",
+            "Name": "Standard with Windows 7 and Office 2013(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 2 vCPU 4GiB Memory 50GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1477521705.094
+        },
+        {
+            "BundleId": "wsb-7dmn3zpyr",
+            "Name": "Standard with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 2 vCPU 4GiB Memory 50GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1559161672.838
+        },
+        {
+            "BundleId": "wsb-cxx8cvwpz",
+            "Name": "Performance with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 2 vCPU 7.5GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1559161672.462
+        },
+        {
+            "BundleId": "wsb-xp609rqcs",
+            "Name": "Power with Amazon Linux 2(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 4 vCPU 16GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1529603876.39
+        },
+        {
+            "BundleId": "wsb-kgjp98lt8",
+            "Name": "Value with Windows 7 and Office 2010",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2010 and PCoIP 1 vCPU 2GiB Memory 10GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1477521674.29
+        },
+        {
+            "BundleId": "wsb-g6cjhl60w",
+            "Name": "GraphicsPro with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 16 vCPU 122GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICSPRO"
+            },
+            "LastUpdatedTime": 1538422934.271
+        },
+        {
+            "BundleId": "wsb-ftkjdlgks",
+            "Name": "Graphics with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 8 vCPU 15GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1492119149.083
+        },
+        {
+            "BundleId": "wsb-5jths07xj",
+            "Name": "Graphics with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 8 vCPU 15GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1492119159.515
+        },
+        {
+            "BundleId": "wsb-hztzqyk3m",
+            "Name": "Power with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 4 vCPU 16GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1496782230.203
+        },
+        {
+            "BundleId": "wsb-5rlx0zrt5",
+            "Name": "GraphicsPro with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 16 vCPU 122GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICSPRO"
+            },
+            "LastUpdatedTime": 1538422925.424
+        },
+        {
+            "BundleId": "wsb-vqmq0qnc4",
+            "Name": "PowerPro with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 8 vCPU 32GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538423300.154
+        },
+        {
+            "BundleId": "wsb-28r6qk5nl",
+            "Name": "Value with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 1 vCPU 2GiB Memory 10GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1559161672.617
+        },
+        {
+            "BundleId": "wsb-d8q3c2w4l",
+            "Name": "Performance with Windows 7(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 2 vCPU 7.5GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1477521688.348
+        },
+        {
+            "BundleId": "wsb-0ngbndd5g",
+            "Name": "Standard with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 2 vCPU 4GiB Memory 50GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1492119158.407
+        },
+        {
+            "BundleId": "wsb-j1ckzg142",
+            "Name": "PowerPro with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 8 vCPU 32GiB Memory 100GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1559161671.979
+        },
+        {
+            "BundleId": "wsb-8mljdpn1y",
+            "Name": "Performance with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 2 vCPU 7.5GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1559161672.873
+        },
+        {
+            "BundleId": "wsb-drh4m5c2r",
+            "Name": "Power with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 4 vCPU 16GiB Memory 100GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1559161671.844
+        },
+        {
+            "BundleId": "wsb-3vjdfqs9d",
+            "Name": "Value with Amazon Linux 2(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 1 vCPU 2GiB Memory 10GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1529603876.115
+        },
+        {
+            "BundleId": "wsb-0h0yf5w9q",
+            "Name": "PowerPro with Windows 7 and Office 2013",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 with Office 2013 and PCoIP 8 vCPU 32GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538422930.821
+        },
+        {
+            "BundleId": "wsb-2z41qc52c",
+            "Name": "Standard with Windows 7 and Office 2010(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2010 and PCoIP 2 vCPU 4GiB Memory 50GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1477521682.658
+        },
+        {
+            "BundleId": "wsb-cq3wxw02g",
+            "Name": "Power with Windows 7",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 with PCoIP 4 vCPU 16GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1496782230.299
+        },
+        {
+            "BundleId": "wsb-2gcd1nm07",
+            "Name": "Power with Windows 7 and Office 2013",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 with Office 2013 and PCoIP 4 vCPU 16GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1496782230.391
+        },
+        {
+            "BundleId": "wsb-3hq35f30x",
+            "Name": "PowerPro with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 8 vCPU 32GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1559161672.975
+        },
+        {
+            "BundleId": "wsb-8vbljg4r6",
+            "Name": "Standard with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 2 vCPU 4GiB Memory 50GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1480379372.468
+        },
+        {
+            "BundleId": "wsb-w42vs8svd",
+            "Name": "Power with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 4 vCPU 16GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1496782230.04
+        },
+        {
+            "BundleId": "wsb-g787l70rm",
+            "Name": "Performance with Amazon Linux 2(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 2 vCPU 7.5GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1529603876.513
+        },
+        {
+            "BundleId": "wsb-gwwsvq6xr",
+            "Name": "Value with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 1 vCPU 2GiB Memory 10GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1559161672.725
+        },
+        {
+            "BundleId": "wsb-b1h39vgz8",
+            "Name": "PowerPro with Amazon Linux 2",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 8 vCPU 32GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538422930.759
+        },
+        {
+            "BundleId": "wsb-dy4bd5kvl",
+            "Name": "Graphics with Windows 7",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 8 vCPU 15GiB Memory 100GB Storage",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1429738490.424
+        },
+        {
+            "BundleId": "wsb-gj6w8wzxy",
+            "Name": "GraphicsPro with Windows 10(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with PCoIP 16 vCPU 122GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICSPRO"
+            },
+            "LastUpdatedTime": 1538423301.896
+        },
+        {
+            "BundleId": "wsb-df76rqys9",
+            "Name": "Value with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 1 vCPU 2GiB Memory 10GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1480379372.663
+        },
+        {
+            "BundleId": "wsb-bwvt04vhx",
+            "Name": "GraphicsPro with Windows 10 and Office 2016(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and PCoIP 16 vCPU 122GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICSPRO"
+            },
+            "LastUpdatedTime": 1538423216.871
+        },
+        {
+            "BundleId": "wsb-64nqp4sgx",
+            "Name": "Power with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 4 vCPU 16GiB Memory 100GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWER"
+            },
+            "LastUpdatedTime": 1559161672.024
+        },
+        {
+            "BundleId": "wsb-fbd0nl4fl",
+            "Name": "Graphics with Windows 7 and Office 2010(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2010 and PCoIP 8 vCPU 15GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1477521694.464
+        },
+        {
+            "BundleId": "wsb-5h1pf1zxc",
+            "Name": "Standard with Windows 7 and Office 2013",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2013 and PCoIP 2 vCPU 4GiB Memory 50GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1477521680.014
+        },
+        {
+            "BundleId": "wsb-51lz6zqdc",
+            "Name": "Graphics with Windows 7(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 8 vCPU 15GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "100"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "GRAPHICS"
+            },
+            "LastUpdatedTime": 1477521685.709
+        },
+        {
+            "BundleId": "wsb-vlsvncjjf",
+            "Name": "Standard with Windows 7 and Office 2010",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with Office 2010 and PCoIP 2 vCPU 4GiB Memory 50GB Storage",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "50"
+            },
+            "ComputeType": {
+                "Name": "STANDARD"
+            },
+            "LastUpdatedTime": 1477521660.574
+        },
+        {
+            "BundleId": "wsb-1wjxykg88",
+            "Name": "PowerPro with Amazon Linux 2(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Amazon Linux 2 with PCoIP 8 vCPU 32GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538423215.161
+        },
+        {
+            "BundleId": "wsb-b9jc2fhhl",
+            "Name": "Performance with Windows 10",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with WorkSpaces Streaming Protocol 2 vCPU 7.5GiB Memory 100GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "PERFORMANCE"
+            },
+            "LastUpdatedTime": 1559161672.244
+        },
+        {
+            "BundleId": "wsb-f1j69htzb",
+            "Name": "PowerPro with Windows 7(Japanese)",
+            "Owner": "Amazon",
+            "Description": "Windows 7 Experience provided by Windows Server 2008 R2 with PCoIP 8 vCPU 32GiB Memory 100GB Storage (Japanese)",
+            "RootStorage": {
+                "Capacity": "175"
+            },
+            "UserStorage": {
+                "Capacity": "100"
+            },
+            "ComputeType": {
+                "Name": "POWERPRO"
+            },
+            "LastUpdatedTime": 1538423299.985
+        },
+        {
+            "BundleId": "wsb-0zsvgp8fc",
+            "Name": "Value with Windows 10 and Office 2016",
+            "Owner": "Amazon",
+            "Description": "Windows 10 Experience provided by Windows Server 2016 with Office 2016 and WorkSpaces Streaming Protocol 1 vCPU 2GiB Memory 10GB Storage (English)",
+            "RootStorage": {
+                "Capacity": "80"
+            },
+            "UserStorage": {
+                "Capacity": "10"
+            },
+            "ComputeType": {
+                "Name": "VALUE"
+            },
+            "LastUpdatedTime": 1559161672.351
+        }
+    ]
+}
