@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import cdk = require('@aws-cdk/core');
 import events = require('@aws-cdk/aws-events');
 import { Duration } from '@aws-cdk/core';

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import fs = require('fs');
 import cdk = require('@aws-cdk/core');
 import events = require('@aws-cdk/aws-events');
