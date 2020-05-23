@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import cdk = require('@aws-cdk/core');
 import events = require('@aws-cdk/aws-events');
-import { Duration } from '@aws-cdk/core';
+import { Duration, Environment } from '@aws-cdk/core';
 import { AmazonLinuxImage, Instance, InstanceType, InstanceClass, InstanceSize, IVpc } from '@aws-cdk/aws-ec2';
 import { BackupPlan, BackupPlanRule, BackupResource, BackupVault } from '@aws-cdk/aws-backup';
 import { Alarm, Metric } from '@aws-cdk/aws-cloudwatch';
@@ -9,6 +9,7 @@ import { Alarm, Metric } from '@aws-cdk/aws-cloudwatch';
 // EC2 Stack
 interface StackProps extends cdk.StackProps {
   vpc: IVpc;
+  env: Environment;
 }
 
 export class EC2Stack extends cdk.Stack {
