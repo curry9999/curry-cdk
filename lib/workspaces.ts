@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 import cdk = require('@aws-cdk/core');
-import { IVpc, Vpc } from '@aws-cdk/aws-ec2';
+import { IVpc } from '@aws-cdk/aws-ec2';
 import { CfnSimpleAD } from '@aws-cdk/aws-directoryservice';
 import { CfnWorkspace } from '@aws-cdk/aws-workspaces';
+import { Environment } from '@aws-cdk/core';
 
 interface StackProps extends cdk.StackProps {
   vpc: IVpc;
+  env: Environment;
 }
 
 // WorkSpaces Stack
