@@ -17,14 +17,15 @@ const app = new cdk.App();
 /* Stack VPC */
 const vpcstack = new VPCStack(app, 'VPCStack', { env: osenv });
 
-/* Stack EC2 Auto Start and Auto Stop */
-const ec2stack = new EC2Stack(app, 'EC2Stack', {
+/* Stack EC2 Auto Stop and Auto Backup */
+const ec2 = new EC2Stack(app, 'EC2Stack', {
     vpc: vpcstack.vpc,
     env: osenv,
+    count: 2
 });
-ec2stack.tags.setTag('autostop','1');
-ec2stack.tags.setTag('autostart','0');
-ec2stack.tags.setTag('autobackup','1');
+ec2.tags.setTag('autostop','1');
+ec2.tags.setTag('autostart','1');
+ec2.tags.setTag('autobackup','1');
 
 /* Stack Labmda */
 const iamstack = new IamStack(app, 'IamStack', { env: osenv });
