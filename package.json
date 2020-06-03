@@ -28,7 +28,7 @@
     "@aws-cdk/aws-backup": "*",
     "@aws-cdk/aws-ec2": "*",
     "@aws-cdk/core": "*",
-    "node-gyp": "^6.1.0",
+    "node-gyp": "^7.0.0",
     "source-map-support": "^0.5.19"
   }
 }
