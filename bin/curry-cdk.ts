@@ -3,6 +3,7 @@ import cdk = require('@aws-cdk/core');
 import { EC2Stack } from '../lib/ec2';
 import { VPCStack } from '../lib/vpc';
 import { IamStack , LambdaStack } from '../lib/lambda';
+import { IamUserStack } from '../lib/iam_user';
 import { WorkSpacesStack } from '../lib/workspaces';
 
 /* OS Environments */
@@ -34,6 +35,9 @@ new LambdaStack(app, 'LambdaStack', {
     lambdarole: iamstack.lambdarole,
     env: osenv,
 });
+
+/* Stack IamUser */
+new IamUserStack(app, 'IamUserStack', { env: osenv });
 
 /* Stack WorkSpaces */
 new WorkSpacesStack(app, 'WorkSpacesStack', {
