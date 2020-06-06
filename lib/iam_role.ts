@@ -3,7 +3,7 @@ import cdk = require('@aws-cdk/core');
 import { Role, ServicePrincipal, ManagedPolicy } from '@aws-cdk/aws-iam';
 
 // IAM Stack
-export class IamStack extends cdk.Stack {
+export class IamRoleStack extends cdk.Stack {
   public readonly lambdarole: Role;
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);

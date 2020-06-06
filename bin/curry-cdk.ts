@@ -3,7 +3,7 @@ import cdk = require('@aws-cdk/core');
 import { EC2Stack } from '../lib/ec2';
 import { VPCStack } from '../lib/vpc';
 import { LambdaStack } from '../lib/lambda';
-import { IamStack } from '../lib/iam_role';
+import { IamRoleStack } from '../lib/iam_role';
 import { IamUserStack } from '../lib/iam_user';
 import { WorkSpacesStack } from '../lib/workspaces';
 
@@ -30,7 +30,7 @@ ec2.tags.setTag('autostart','1');
 ec2.tags.setTag('autobackup','1');
 
 /* Stack Labmda */
-const iamstack = new IamStack(app, 'IamStack', { env: osenv });
+const iamstack = new IamRoleStack(app, 'IamRoleStack', { env: osenv });
 
 new LambdaStack(app, 'LambdaStack', {
     lambdarole: iamstack.lambdarole,
