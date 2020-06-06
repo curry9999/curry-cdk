@@ -5,28 +5,8 @@ import events = require('@aws-cdk/aws-events');
 import targets = require('@aws-cdk/aws-events-targets');
 import lambda = require('@aws-cdk/aws-lambda');
 import { Rule } from '@aws-cdk/aws-events';
-import { IRole , Role, ServicePrincipal, ManagedPolicy } from '@aws-cdk/aws-iam';
+import { IRole } from '@aws-cdk/aws-iam';
 import { Environment } from '@aws-cdk/core';
-
-// IAM Stack
-export class IamStack extends cdk.Stack {
-  public readonly lambdarole: Role;
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
-    super(scope, id, props);
-
-    /*
-      IAM Role
-    */
-    // IAM Role Lambda Execute
-    this.lambdarole = new Role(this, 'IamRoleLambda', {
-      assumedBy: new ServicePrincipal('lambda.amazonaws.com'),
-      managedPolicies: [
-        ManagedPolicy.fromAwsManagedPolicyName('service-role/AWSLambdaBasicExecutionRole'),
-        ManagedPolicy.fromAwsManagedPolicyName('AmazonEC2FullAccess'),
-      ],
-    });
-  }
-}
 
 // Lambda Stack
 interface StackProps extends cdk.StackProps {

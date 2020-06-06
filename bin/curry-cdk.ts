@@ -2,7 +2,8 @@
 import cdk = require('@aws-cdk/core');
 import { EC2Stack } from '../lib/ec2';
 import { VPCStack } from '../lib/vpc';
-import { IamStack , LambdaStack } from '../lib/lambda';
+import { LambdaStack } from '../lib/lambda';
+import { IamStack } from '../lib/iam_role';
 import { IamUserStack } from '../lib/iam_user';
 import { WorkSpacesStack } from '../lib/workspaces';
 
