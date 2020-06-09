@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import cdk = require('@aws-cdk/core');
-import { Role, ServicePrincipal, ManagedPolicy } from '@aws-cdk/aws-iam';
+import { PolicyStatement , Role, ServicePrincipal, ManagedPolicy } from '@aws-cdk/aws-iam';
 
 // IAM Stack
 export class IamRoleStack extends cdk.Stack {
@@ -16,8 +16,11 @@ export class IamRoleStack extends cdk.Stack {
       assumedBy: new ServicePrincipal('lambda.amazonaws.com'),
       managedPolicies: [
         ManagedPolicy.fromAwsManagedPolicyName('service-role/AWSLambdaBasicExecutionRole'),
-        ManagedPolicy.fromAwsManagedPolicyName('AmazonEC2FullAccess'),
       ],
-    });
+    }); 
+    this.lambdarole.addToPolicy(new PolicyStatement({
+      resources: ['*'],
+      actions: ['ec2:DescribeInstances','ec2:StartInstances'],
+    }));
   }
 }
