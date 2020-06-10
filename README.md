@@ -1,14 +1,7 @@
-# Welcome to your CDK TypeScript project!
+# Welcome to the curry CDK project.
 
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+This is a cdk artifact created by Curry.
 
 ## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+ * `bash cdk-deploy-dev.sh`    Deploy the CDK to your development environment.
+ * `bash cdk-deploy-prod.sh`   Deploy the CDK to the production environment.
