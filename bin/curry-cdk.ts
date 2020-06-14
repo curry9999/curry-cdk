@@ -5,6 +5,7 @@ import { VPCStack } from '../lib/vpc';
 import { LambdaStack } from '../lib/lambda';
 import { IamRoleStack } from '../lib/iam_role';
 import { IamUserStack } from '../lib/iam_user';
+import { NetworkLoadBalancerStack } from '../lib/nlb';
 import { WorkSpacesStack } from '../lib/workspaces';
 
 /* OS Environments */
@@ -45,3 +46,6 @@ new WorkSpacesStack(app, 'WorkSpacesStack', {
     vpc: vpcstack.vpc,
     env: osenv
 });
+
+/* Stack NetworkLoadBalancer */
+new NetworkLoadBalancerStack(app, 'NetworkLoadBalancerStack', { env: osenv });
