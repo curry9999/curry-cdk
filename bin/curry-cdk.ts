@@ -7,6 +7,7 @@ import { IamRoleStack } from '../lib/iam_role';
 import { IamUserStack } from '../lib/iam_user';
 import { NetworkLoadBalancerStack } from '../lib/nlb';
 import { WorkSpacesStack } from '../lib/workspaces';
+import { GlobalAcceleratorStack } from '../lib/global_accelerator';
 
 /* OS Environments */
 const osenv = {
@@ -49,3 +50,6 @@ new WorkSpacesStack(app, 'WorkSpacesStack', {
 
 /* Stack NetworkLoadBalancer */
 new NetworkLoadBalancerStack(app, 'NetworkLoadBalancerStack', { env: osenv });
+
+/* Stack Global Accelerator */
+new GlobalAcceleratorStack(app, 'GlobalAcceleratorStack', { env: osenv });
