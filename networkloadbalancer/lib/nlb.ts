@@ -3,7 +3,7 @@ import cdk = require('@aws-cdk/core');
 import ec2 = require('@aws-cdk/aws-ec2');
 import { AutoScalingGroup } from '@aws-cdk/aws-autoscaling';
 import { Vpc } from '@aws-cdk/aws-ec2';
-import { ApplicationLoadBalancer , NetworkLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
+import { NetworkLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
 
 export class NetworkLoadBalancerStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {

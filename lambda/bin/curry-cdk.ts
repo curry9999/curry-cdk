@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import cdk = require('@aws-cdk/core');
-import { NetworkLoadBalancerStack } from '../lib/nlb';
+import { LambdaStack } from '../lib/lambda';
+import { IamRoleStack } from '../lib/iam_role';
 
 /* OS Environments */
 const osenv = {
@@ -11,5 +12,10 @@ const osenv = {
 /* app */
 const app = new cdk.App();
 
-/* Stack NetworkLoadBalancer */
-new NetworkLoadBalancerStack(app, 'NetworkLoadBalancerStack', { env: osenv });
+/* Stack Labmda */
+const iamstack = new IamRoleStack(app, 'IamRoleStack', { env: osenv });
+
+new LambdaStack(app, 'LambdaStack', {
+    lambdarole: iamstack.lambdarole,
+    env: osenv,
+});
