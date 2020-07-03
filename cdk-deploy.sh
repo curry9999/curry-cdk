@@ -2,11 +2,13 @@
 # cdk-deploy-core.sh
 
 # env
-export CDK_ENV=$1
+## aws profile
+export AWS_PROFILE=$1
 shift
 
-# deploy account and region
-export AWS_PROFILE=${CDK_ENV}
+# main
+## check cdk stack count
+test `cdk ls --require-approval never | wc -l` != 1 && test $#==0 && echo "*** ERROR: Please specify the stack name in the argument" && cdk ls --require-approval never && exit 1
 
 # execute cdk synth
 cdk synth --require-approval never "$@"
