@@ -1,11 +1,12 @@
 #!/bin/bash
 # cdk-deploy-core.sh
 
+# env
+export CDK_ENV=$1
+shift
+
 # deploy account and region
-export CDK_DEPLOY_ACCOUNT=$1
-shift
-export CDK_DEPLOY_REGION=$1
-shift
+export AWS_PROFILE=${CDK_ENV}
 
 # execute cdk synth
 cdk synth --require-approval never "$@"
