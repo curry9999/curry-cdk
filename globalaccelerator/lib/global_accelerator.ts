@@ -5,7 +5,7 @@ import ec2 = require('@aws-cdk/aws-ec2');
 import { AutoScalingGroup } from '@aws-cdk/aws-autoscaling';
 import { Vpc } from '@aws-cdk/aws-ec2';
 import { ApplicationLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
-import { CfnAccelerator , CfnListener , CfnEndpointGroup } from '@aws-cdk/aws-globalaccelerator';
+import { Accelerator, Listener, EndpointGroup, EndpointConfiguration, ConnectionProtocol } from '@aws-cdk/aws-globalaccelerator';
 
 export class GlobalAcceleratorStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
@@ -44,23 +44,26 @@ export class GlobalAcceleratorStack extends cdk.Stack {
     /*
       Global Accelerator
     */
-    const cfnAccelerator = new CfnAccelerator(this, 'CfnAccelerator', {
-      name: 'AcceleratorNameTest'
-    })
-    const cfnListener = new CfnListener(this, 'CfnListener', {
-      acceleratorArn: cfnAccelerator.attrAcceleratorArn,
-      portRanges: [{
-        fromPort: 80,
-        toPort: 80
-      }],
-      protocol: 'TCP',
-    })
-    const cfnEndpointGroup = new CfnEndpointGroup(this, 'CfnEndpointGroup', {
-      endpointGroupRegion: 'ap-northeast-1',
-      listenerArn: cfnListener.attrListenerArn,
-      endpointConfigurations: [{
-        endpointId: alb.loadBalancerArn,
-      }],
-    })
+    const accelerator = new Accelerator(this, 'Accelerator', {
+      acceleratorName: 'AcceleratorNameTest',
+    });
+    const acceleratorListener = new Listener(this, 'Listener', {
+      accelerator,
+      portRanges: [
+        {
+          fromPort: 80,
+          toPort: 80,
+        },
+      ],
+      protocol: ConnectionProtocol.TCP,
+    });
+    const acceleratorEndpointGroup = new EndpointGroup(this, 'EndpointGroup', {
+      region: 'ap-northeast-1',
+      listener: acceleratorListener,
+    });
+    new EndpointConfiguration(this, 'EndpointConfiguration', {
+      endpointGroup: acceleratorEndpointGroup,
+      endpointId: alb.loadBalancerArn,
+    });
   }
 }
