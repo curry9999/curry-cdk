@@ -5,6 +5,7 @@ import { AutoScalingGroup } from '@aws-cdk/aws-autoscaling';
 import { Vpc } from '@aws-cdk/aws-ec2';
 import { NetworkLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
 
+/* NetworkLoadBalancer */
 export class NetworkLoadBalancerStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
@@ -39,3 +40,15 @@ export class NetworkLoadBalancerStack extends cdk.Stack {
     });
   }
 }
+
+/* OS Environments */
+const osenv = {
+    account: process.env.CDK_DEPLOY_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEPLOY_REGION || process.env.CDK_DEFAULT_REGION,
+}
+
+/* app */
+const app = new cdk.App();
+
+/* Stack NetworkLoadBalancer */
+new NetworkLoadBalancerStack(app, 'NetworkLoadBalancerStack', { env: osenv });
