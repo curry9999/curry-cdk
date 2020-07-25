@@ -7,15 +7,16 @@ import { Vpc } from '@aws-cdk/aws-ec2';
 import { ApplicationLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
 import { Accelerator, Listener, EndpointGroup, EndpointConfiguration, ConnectionProtocol } from '@aws-cdk/aws-globalaccelerator';
 
+/* Stack GlobalAcceleratorStack */
 export class GlobalAcceleratorStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-
+  
     /*
       VPC
     */
     const vpc = new Vpc(this, 'VPC');
-
+  
     /*
       AutoScalingGroup
     */
@@ -25,7 +26,7 @@ export class GlobalAcceleratorStack extends cdk.Stack {
       machineImage: new ec2.AmazonLinuxImage,
     });
     asg.addUserData(fs.readFileSync("userdata/base.sh").toString());
-
+  
     /*
       ApplicationLoadBalancer
     */
@@ -40,7 +41,7 @@ export class GlobalAcceleratorStack extends cdk.Stack {
       port: 80,
       targets: [asg]
     });
-
+  
     /*
       Global Accelerator
     */
@@ -67,3 +68,15 @@ export class GlobalAcceleratorStack extends cdk.Stack {
     });
   }
 }
+  
+/* OS Environments */
+const osenv = {
+    account: process.env.CDK_DEPLOY_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEPLOY_REGION || process.env.CDK_DEFAULT_REGION,
+}
+
+/* app */
+const app = new cdk.App();
+
+/* Stack Global Accelerator */
+new GlobalAcceleratorStack(app, 'GlobalAcceleratorStack', { env: osenv });

@@ -2,7 +2,7 @@
   "name": "cdk",
   "version": "0.1.0",
   "bin": {
-    "stack": "bin/curry-cdk.js"
+    "stack": "main.js"
   },
   "scripts": {
     "build": "tsc",
