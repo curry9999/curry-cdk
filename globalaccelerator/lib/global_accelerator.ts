@@ -31,7 +31,7 @@ export class GlobalAcceleratorStack extends cdk.Stack {
     */
     const alb = new ApplicationLoadBalancer(this, 'ApplicationLoadBalancer', {
       vpc,
-      internetFacing: true
+      internetFacing: true,
     });
     const listener = alb.addListener('Listener', {
       port: 80,
