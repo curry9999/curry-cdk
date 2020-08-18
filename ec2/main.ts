@@ -52,7 +52,7 @@ export class EC2Stack extends cdk.Stack {
         vpc: props.vpc,
         instanceType: InstanceType.of(
           InstanceClass.T2,
-          InstanceSize.MICRO
+          InstanceSize.MICRO,
         ),
         machineImage: new AmazonLinuxImage(),
         keyName: 'test',
@@ -91,7 +91,7 @@ const vpcstack = new VPCStack(app, 'VPCStack', { env: osenv });
 const ec2 = new EC2Stack(app, 'EC2Stack', {
   vpc: vpcstack.vpc,
   env: osenv,
-  count: 2
+  count: 2,
 });
 ec2.tags.setTag('autostop','1');
 ec2.tags.setTag('autostart','1');
