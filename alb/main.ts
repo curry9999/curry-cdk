@@ -31,14 +31,14 @@ class ApplicationLoadBalancerStack extends cdk.Stack {
     */
     const alb = new ApplicationLoadBalancer(this, 'ApplicationLoadBalancer', {
       vpc,
-      internetFacing: true
+      internetFacing: true,
     });
     const listener = alb.addListener('Listener', {
       port: 80,
     });
     listener.addTargets('ListenerTargets', {
       port: 80,
-      targets: [asg]
+      targets: [asg],
     });
   }
 }

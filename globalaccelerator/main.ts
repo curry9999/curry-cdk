@@ -39,7 +39,7 @@ export class GlobalAcceleratorStack extends cdk.Stack {
     });
     listener.addTargets('ListenerTargets', {
       port: 80,
-      targets: [asg]
+      targets: [asg],
     });
   
     /*

@@ -21,7 +21,7 @@ export class NetworkLoadBalancerStack extends cdk.Stack {
     const asg = new AutoScalingGroup(this, 'AutoScalingGroup', {
       vpc,
       instanceType: ec2.InstanceType.of(ec2.InstanceClass.T2, ec2.InstanceSize.MICRO),
-      machineImage: new ec2.AmazonLinuxImage
+      machineImage: new ec2.AmazonLinuxImage,
     });
 
     /*
@@ -29,14 +29,14 @@ export class NetworkLoadBalancerStack extends cdk.Stack {
     */
     const nlb = new NetworkLoadBalancer(this, 'NetworkLoadBalancer', {
       vpc,
-      internetFacing: true
+      internetFacing: true,
     });
     const listener = nlb.addListener('Listener', {
       port: 80,
     });
     listener.addTargets('ListenerTargets', {
       port: 80,
-      targets: [asg]
+      targets: [asg],
     });
   }
 }
