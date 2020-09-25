@@ -2,9 +2,6 @@
 import fs = require('fs');
 import cdk = require('@aws-cdk/core');
 import ec2 = require('@aws-cdk/aws-ec2');
-import { AutoScalingGroup } from '@aws-cdk/aws-autoscaling';
-import { Vpc } from '@aws-cdk/aws-ec2';
-import { ApplicationLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
 
 /* Stack Global Accelerator */
 class VpcStack extends cdk.Stack {
