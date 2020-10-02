@@ -1,1 +1,1 @@
-cdk-deploy.sh
+../cdk-deploy.sh
