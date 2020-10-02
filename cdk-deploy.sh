@@ -8,7 +8,6 @@ shift
 
 ## check envs
 if [ ${ARG} = "remove" ]; then
-    export REMOVE_FLG=1
     export AWS_PROFILE=$1
     shift
 
@@ -17,7 +16,6 @@ if [ ${ARG} = "remove" ]; then
     # execute cdk destroy
     cdk destroy -f --require-approval never "$@"
 else
-    export REMOVE_FLG=0
     export AWS_PROFILE=${ARG}
 
     # main
