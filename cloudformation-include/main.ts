@@ -1,5 +1,6 @@
 import * as cdk from '@aws-cdk/core';
 import * as cfn_inc from '@aws-cdk/cloudformation-include';
+import { CfnRouteTable } from '@aws-cdk/aws-ec2';
 import 'source-map-support/register';
 
 export class MigrationStack extends cdk.Stack {
@@ -9,6 +10,9 @@ export class MigrationStack extends cdk.Stack {
     // The code that defines your stack goes here
     const cfnInclude = new cfn_inc.CfnInclude(this, 'Template', { 
       templateFile: 'VpcStack.yml',
+    });
+    new CfnRouteTable(this, 'RouteTable', {
+      vpcId: cfnInclude.getResource('VPC').ref,
     });
   }
 }
