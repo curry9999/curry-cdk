@@ -11,9 +11,6 @@ export class MigrationStack extends cdk.Stack {
     const cfnInclude = new cfn_inc.CfnInclude(this, 'Template', { 
       templateFile: 'VpcStack.yml',
     });
-    new CfnRouteTable(this, 'RouteTable', {
-      vpcId: cfnInclude.getResource('VPC').ref,
-    });
   }
 }
 
