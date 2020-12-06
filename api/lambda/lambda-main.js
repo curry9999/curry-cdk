@@ -1,0 +1,5 @@
+"use strict";
+exports.handler = async (event, context) => {
+    return "Hello Lambda World!!!";
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibGFtYmRhLW1haW4uanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJsYW1iZGEtbWFpbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxDQUFDLE9BQU8sR0FBRyxLQUFLLEVBQUUsS0FBSyxFQUFFLE9BQU8sRUFBRSxFQUFFO0lBQ3ZDLE9BQU8sdUJBQXVCLENBQUM7QUFDbkMsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0cy5oYW5kbGVyID0gYXN5bmMgKGV2ZW50LCBjb250ZXh0KSA9PiB7XG4gICAgcmV0dXJuIFwiSGVsbG8gTGFtYmRhIFdvcmxkISEhXCI7XG59O1xuIl19
