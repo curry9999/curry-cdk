@@ -1,0 +1,15 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+package-lock.json
+!lambda/*.js
+
+# CDK asset staging directory
+cdk.context.json
+.cdk.staging
+cdk.out
+
+# Parcel build directories
+.cache
+.build
