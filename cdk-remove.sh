@@ -4,10 +4,15 @@
 # env
 ## input args
 export AWS_PROFILE=$1
-export STACK_NAME=$2
 
-## check cdk stack count
-test `cdk ls --require-approval never | wc -l` != 1 && test $# != 2 && echo "*** ERROR: Please specify the stack name in the argument" && cdk ls --require-approval never && exit 1
+# main
+if [ $# -eq 1 ];then
+  # all stack remove
+  cdk ls --require-approval never | xargs cdk destroy -f --require-approval never
+else
+  STACK_NAME=$2
+  # stack remove
+  cdk destroy -f --require-approval never ${STACK_NAME} || cdk ls --require-approval never
+fi
 
-# execute cdk destroy
-cdk destroy -f --require-approval never ${STACK_NAME}
+exit 0
