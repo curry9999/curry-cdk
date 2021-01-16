@@ -6,6 +6,86 @@ import { Rule, Schedule } from '@aws-cdk/aws-events';
 import { LambdaFunction } from '@aws-cdk/aws-events-targets';
 import { Environment } from '@aws-cdk/core';
 import { Function, InlineCode, Runtime } from '@aws-cdk/aws-lambda';
+import * as cloudfront from "@aws-cdk/aws-cloudfront";
+import * as iam from "@aws-cdk/aws-iam";
+import { Bucket } from "@aws-cdk/aws-s3";
+
+//////////////////////
+// S3 Stack
+//////////////////////
+interface S3StackProps extends cdk.StackProps {
+  env: Environment;
+}
+
+export class S3Stack extends cdk.Stack {
+  constructor(scope: cdk.Construct, id: string, props?: S3StackProps) {
+  super(scope, id, props);
+  
+      // Create Bucket
+      const bucket = new Bucket(this, "public-s3-bucket", {
+        removalPolicy: cdk.RemovalPolicy.DESTROY
+      });
+  
+      // Create OriginAccessIdentity
+      const oai = new cloudfront.OriginAccessIdentity(this, "my-oai");
+  
+      // Create Policy and attach to Bucket
+      const bucketPolicy = new iam.PolicyStatement({
+        effect: iam.Effect.ALLOW,
+        actions: ["s3:GetObject"],
+        principals: [
+          new iam.CanonicalUserPrincipal(
+            oai.cloudFrontOriginAccessIdentityS3CanonicalUserId
+          ),
+        ],
+        resources: [bucket.bucketArn + "/*"],
+      });
+      bucket.addToResourcePolicy(bucketPolicy);
+  
+      // Create CloudFront WebDistribution
+      new cloudfront.CloudFrontWebDistribution(this, "WebsiteDistribution", {
+        viewerCertificate: {
+          aliases: [],
+          props: {
+            cloudFrontDefaultCertificate: true,
+          },
+        },
+        priceClass: cloudfront.PriceClass.PRICE_CLASS_ALL,
+        originConfigs: [
+          {
+            s3OriginSource: {
+              s3BucketSource: bucket,
+              originAccessIdentity: oai,
+            },
+            behaviors: [
+              {
+                isDefaultBehavior: true,
+                minTtl: cdk.Duration.seconds(0),
+                maxTtl: cdk.Duration.days(365),
+                defaultTtl: cdk.Duration.days(1),
+                pathPattern: "my-contents/*",
+              },
+            ],
+          },
+        ],
+        errorConfigurations: [
+          {
+            errorCode: 403,
+            responsePagePath: "/index.html",
+            responseCode: 200,
+            errorCachingMinTtl: 0,
+          },
+          {
+            errorCode: 404,
+            responsePagePath: "/index.html",
+            responseCode: 200,
+            errorCachingMinTtl: 0,
+          },
+        ],
+      });
+  
+  }
+}
 
 //////////////////////
 // IAM Stack
@@ -73,6 +153,11 @@ const osenv = {
 
 // app
 const app = new cdk.App();
+
+// Stack S3
+new S3Stack(app, 'S3Stack', {
+  env: osenv
+});
 
 // Stack Iam Role
 const iamstack = new IamRoleStack(app, 'S3IamRoleStack', {
