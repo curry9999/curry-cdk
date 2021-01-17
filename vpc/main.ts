@@ -3,14 +3,14 @@ import fs = require('fs');
 import cdk = require('@aws-cdk/core');
 import ec2 = require('@aws-cdk/aws-ec2');
 
-/* Stack Global Accelerator */
+//////////////////////
+// VPC
+//////////////////////
 class VpcStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    /*
-      VPC
-    */
+    // VPC
     new ec2.Vpc(this, 'VPC', {
       cidr: "10.0.0.0/16",
       subnetConfiguration: [
@@ -35,14 +35,17 @@ class VpcStack extends cdk.Stack {
   }
 }
 
-/* OS Environments */
+//////////////////////
+// Main
+//////////////////////
+// OS Environments
 const osenv = {
   account: process.env.CDK_DEPLOY_ACCOUNT || process.env.CDK_DEFAULT_ACCOUNT,
   region: process.env.CDK_DEPLOY_REGION || process.env.CDK_DEFAULT_REGION,
 }
   
-/* app */
+// app
 const app = new cdk.App();
 
-/* Stack Global Accelerator */
+// Stack VPC
 new VpcStack(app, 'VpcStack', { env: osenv });
