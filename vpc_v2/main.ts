@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs = require('fs');
-import cdk = require('@aws-cdk/core');
-import ec2 = require('@aws-cdk/aws-ec2');
+import cdk = require('aws-cdk-lib');
+import ec2 = require('aws-cdk-lib/aws-ec2');
 
 //////////////////////
 // VPC
